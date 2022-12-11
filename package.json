@@ -15,7 +15,7 @@
     "format": "prettier -w .",
     "format:check": "prettier -c .",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
-    "prepare": "husky install && npx husky add .husky/pre-commit 'yarn ready' && git add .husky/pre-commit",
+    "prepare": "husky install",
     "ready": "yarn lint:fix && yarn lint:strict && yarn typecheck && yarn format:check && yarn test",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
