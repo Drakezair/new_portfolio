@@ -203,3 +203,101 @@ export interface TagDatabaseNotion {
     }[];
   };
 }
+
+export interface PageRetrieve {
+  object: string;
+  id: string;
+  created_time: string;
+  last_edited_time: string;
+  created_by: {
+    object: string;
+    id: string;
+  };
+  last_edited_by: {
+    object: string;
+    id: string;
+  };
+  cover: {
+    type: string;
+    external: {
+      url: string;
+    };
+  };
+  icon: {
+    type: string;
+    emoji: string;
+  };
+  parent: {
+    type: string;
+    database_id: string;
+  };
+  archived: false;
+  properties: {
+    Tags: {
+      id: string;
+      type: string;
+      multi_select: {
+        id: string;
+        name: string;
+        color: string;
+      }[];
+    };
+    Created: {
+      id: string;
+      type: string;
+      created_time: string;
+    };
+    Description: {
+      id: string;
+      type: string;
+      rich_text: {
+        type: string;
+        text: {
+          content: string;
+          link: null;
+        };
+        annotations: {
+          bold: boolean;
+          italic: boolean;
+          strikethrough: boolean;
+          underline: boolean;
+          code: boolean;
+          color: string;
+        };
+        plain_text: string;
+        href: string | null;
+      }[];
+    };
+    status: {
+      id: string;
+      type: string;
+      status: {
+        id: string;
+        name: string;
+        color: string;
+      };
+    };
+    Name: {
+      id: string;
+      type: string;
+      title: {
+        type: string;
+        text: {
+          content: string;
+          link: null | string;
+        };
+        annotations: {
+          bold: boolean;
+          italic: boolean;
+          strikethrough: boolean;
+          underline: boolean;
+          code: boolean;
+          color: string;
+        };
+        plain_text: string;
+        href: null | string;
+      }[];
+    };
+  };
+  url: string;
+}

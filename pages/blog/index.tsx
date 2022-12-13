@@ -22,7 +22,7 @@ export async function getServerSideProps() {
   return { props: { tags } };
 }
 
-export default function BlogPage({ tags }: { tags: TagDatabaseNotion[] }) {
+export default function BlogPage({ tags }: { tags: TagDatabaseNotion }) {
   useEffect(() => {
     blog_state.tags = tags;
   }, [tags]);

@@ -32,7 +32,7 @@ export async function getServerSideProps() {
       {
         property: 'Tags',
         multi_select: {
-          contains: 'home',
+          contains: 'New',
         },
       },
     ],

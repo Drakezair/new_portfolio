@@ -15,11 +15,13 @@ export default function Nav() {
             width={40}
             height={40}
           />
-          <p className='m-1 font-primary font-bold'>luisandrade.me</p>
+          <p className='m-1 font-primary font-bold max-lg:hidden'>
+            luisandrade.me
+          </p>
         </div>
       </Link>
       <div>
-        <ul className='grid grid-cols-3 gap-5'>
+        <ul className='grid grid-cols-3 max-lg:gap-0 lg:gap-5'>
           <li className='text-center hover:underline'>
             <Link href='/'>Inicio</Link>
           </li>
@@ -34,7 +36,7 @@ export default function Nav() {
           </li>
         </ul>
       </div>
-      <Button>Dercargar CV</Button>
+      <Button className='max-lg:hidden'>Descargar CV</Button>
     </nav>
   );
 }

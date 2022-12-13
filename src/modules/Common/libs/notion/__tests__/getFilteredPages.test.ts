@@ -7,7 +7,7 @@ const mockNotioData = {
       object: 'page',
       id: '574a6618-c303-450d-8231-8806987349d1',
       created_time: '2022-10-22T05:47:00.000Z',
-      last_edited_time: '2022-12-10T22:29:00.000Z',
+      last_edited_time: '2022-12-13T02:25:00.000Z',
       created_by: {
         object: 'user',
         id: 'e9e2c440-0773-4338-b9fb-f114488820cf',
@@ -22,7 +22,10 @@ const mockNotioData = {
           url: 'https://images.unsplash.com/photo-1594904351111-a072f80b1a71?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb',
         },
       },
-      icon: null,
+      icon: {
+        type: 'emoji',
+        emoji: '📙',
+      },
       parent: {
         type: 'database_id',
         database_id: '6126e5b5-7881-4b8d-816d-676a4974b852',
@@ -35,8 +38,18 @@ const mockNotioData = {
           multi_select: [
             {
               id: '6e38b57e-1137-4462-b3c0-36c1b221955d',
-              name: 'home',
-              color: 'gray',
+              name: 'New',
+              color: 'yellow',
+            },
+            {
+              id: 'e9c9e3e1-7690-478a-a76e-4ac271da94f0',
+              name: 'Frontend',
+              color: 'purple',
+            },
+            {
+              id: '0d66e1d5-27b5-48d3-aa49-0bdf4038dead',
+              name: 'ReactJs',
+              color: 'blue',
             },
           ],
         },
@@ -111,7 +124,7 @@ const mockNotioData = {
       object: 'page',
       id: '8524a319-c3b0-4056-b95b-30f84be24b95',
       created_time: '2022-10-22T04:48:00.000Z',
-      last_edited_time: '2022-12-10T23:10:00.000Z',
+      last_edited_time: '2022-12-13T06:55:00.000Z',
       created_by: {
         object: 'user',
         id: 'e9e2c440-0773-4338-b9fb-f114488820cf',
@@ -126,7 +139,10 @@ const mockNotioData = {
           url: 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb',
         },
       },
-      icon: null,
+      icon: {
+        type: 'emoji',
+        emoji: '⚙️',
+      },
       parent: {
         type: 'database_id',
         database_id: '6126e5b5-7881-4b8d-816d-676a4974b852',
@@ -139,8 +155,18 @@ const mockNotioData = {
           multi_select: [
             {
               id: '6e38b57e-1137-4462-b3c0-36c1b221955d',
-              name: 'home',
-              color: 'gray',
+              name: 'New',
+              color: 'yellow',
+            },
+            {
+              id: '0d66e1d5-27b5-48d3-aa49-0bdf4038dead',
+              name: 'ReactJs',
+              color: 'blue',
+            },
+            {
+              id: 'e9c9e3e1-7690-478a-a76e-4ac271da94f0',
+              name: 'Frontend',
+              color: 'purple',
             },
           ],
         },
@@ -215,7 +241,7 @@ const mockNotioData = {
       object: 'page',
       id: '0fc51002-4817-408f-b147-b904c18f14ee',
       created_time: '2022-10-21T19:47:00.000Z',
-      last_edited_time: '2022-12-10T22:28:00.000Z',
+      last_edited_time: '2022-12-13T01:55:00.000Z',
       created_by: {
         object: 'user',
         id: 'e9e2c440-0773-4338-b9fb-f114488820cf',
@@ -230,7 +256,10 @@ const mockNotioData = {
           url: 'https://images.unsplash.com/photo-1610986602538-431d65df4385?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb',
         },
       },
-      icon: null,
+      icon: {
+        type: 'emoji',
+        emoji: '🔨',
+      },
       parent: {
         type: 'database_id',
         database_id: '6126e5b5-7881-4b8d-816d-676a4974b852',
@@ -243,8 +272,18 @@ const mockNotioData = {
           multi_select: [
             {
               id: '6e38b57e-1137-4462-b3c0-36c1b221955d',
-              name: 'home',
-              color: 'gray',
+              name: 'New',
+              color: 'yellow',
+            },
+            {
+              id: '6fa823a7-87a1-4291-a3a9-741858c116b3',
+              name: 'JSON',
+              color: 'red',
+            },
+            {
+              id: '0c38f00e-cd6c-46fa-85ae-9eced34d1843',
+              name: 'Backend',
+              color: 'green',
             },
           ],
         },
@@ -332,14 +371,22 @@ describe('getFilteredPages', () => {
       })
     ) as jest.Mock;
     const data = await getFilteredPages({
-      and: [
-        {
-          property: 'status',
-          status: {
-            equals: 'Draft',
+      filter: {
+        and: [
+          {
+            property: 'status',
+            status: {
+              equals: 'Public',
+            },
           },
-        },
-      ],
+          {
+            property: 'Tags',
+            multi_select: {
+              contains: 'New',
+            },
+          },
+        ],
+      },
     });
     expect(data).toStrictEqual([
       {
@@ -348,6 +395,8 @@ describe('getFilteredPages', () => {
         image:
           'https://images.unsplash.com/photo-1594904351111-a072f80b1a71?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb',
         id: '574a6618-c303-450d-8231-8806987349d1',
+        description:
+          'Muy a menudo se requiere validar los campos en nuestros formularios. Esto se puede hacer fácilmente usando React Hook From',
       },
       {
         title:
@@ -355,12 +404,16 @@ describe('getFilteredPages', () => {
         image:
           'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb',
         id: '8524a319-c3b0-4056-b95b-30f84be24b95',
+        description:
+          'React Query es una biblioteca que le da a ReactJS la capacidad de gestión de estado para cualquier tipo de datos asíncronos. Según su documentación oficial',
       },
       {
         title: 'Crea tu UI antes que el backend con JSON server',
         image:
           'https://images.unsplash.com/photo-1610986602538-431d65df4385?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb',
         id: '0fc51002-4817-408f-b147-b904c18f14ee',
+        description:
+          'Una tarea común para los desarrolladores front-end es simular un servicio REST de back-end para entregar algunos datos en formato JSON a la aplicación front-end y asegurarse de que todo funcione como se espera.',
       },
     ]);
   });

@@ -26,6 +26,7 @@ export default function MainLayout({
         <meta name='description' content={description} />
         <meta name='robots' content='index' />
         <meta property='og:title' content={ogtitle} />
+        <meta property='og:description' content={description} />
         <meta property='og:type' content={ogtype} />
         <meta property='og:url' content={ogurl} />
         <meta property='og:image' content={ogimage} />
