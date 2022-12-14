@@ -26,7 +26,7 @@ export default function Nav() {
             <Link href='/'>Inicio</Link>
           </li>
           <li className='text-center hover:underline'>
-            <Link href='/'>Experiencia</Link>
+            <Link href='/experiencia'>Experiencia</Link>
           </li>
           {/* <li className='hover:underline'>
             <Link href='/experiencia'>Experiencia</Link>

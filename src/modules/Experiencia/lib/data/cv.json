@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Software developerSoftware developer",
+    "company": "Rootstack · Full-time",
+    "time": "Oct 2021 - Present · 1 yr 3 mos",
+    "description": "Develop solutions for diferent clients on diferent technologies",
+    "skills": "API Development · Git · GatsbyJS · Xamarin Products · AWS Lambda · Serverless Framework · Amazon Web Services (AWS) · React Native · React.js · AngularJS",
+    "image": "/images/works/rootstack.jpg",
+    "order": 0
+  },
+  {
+    "title": "Software Engineer",
+    "company": "IMUKO · Full-time",
+    "time": "Jun 2021 - Aug 2022 · 1 yr 3 mos",
+    "description": "I work on diverse platforms for diferents clients. Most relevant is scanib.com that is a platform complete developed by me and is a rental and sales of real states",
+    "skills": "API Development · Git · Strapi.js · Amazon Web Services (AWS) · React Native · AWS IoT · expo · React.js · Node.js",
+    "image": "/images/works/imuko.jpg",
+    "order": 1
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "KIERO NOVEDADES · Full-time",
+    "time": "Apr 2020 - Feb 2021 · 11 mos",
+    "description": "Trabajé desarrollando un modulo para creación dinamica de paginas estaticas. En este proyecto lidere un equipo de 2 desarrolladores adicional a mi. Tecnologias utilizadas: React.js, Django rest framework, AWS EC2, Lambda and postgresql",
+    "skills": "API Development · Git · ReactJs · NestJs · SDUI · TDD",
+    "image": "/images/works/kiero.jpg",
+    "order": 2
+  },
+  {
+    "title": "Full-stack Developer",
+    "company": "Symplifica · Full-time",
+    "time": "May 2019 - Apr 2020 · 1 yr",
+    "description": "Symplica is an app for Social Sercurity managment on colombia, i work mainly on creation of microservices of backend",
+    "skills": "API Development · Git · Django REST Framework · Symphony · Selenium · React.js · Python (Programming Language) · Flutter",
+    "image": "/images/works/symplifica.jpg",
+    "order": 3
+  },
+  {
+    "title": "Freelance Software Developer",
+    "company": "Self-employed",
+    "time": "Dec 2017 - Apr 2020 · 2 yrs 5 mos",
+    "description": "He trabajado como Freelance desarrollando software a la medida para distintos clientes. Principalmente como desarrollador frontend. Pero tambien he trabajado en soluciones completas para clientes",
+    "skills": "API Development · Git · Django REST Framework · Symphony · Selenium · React.js · Python (Programming Language) · Flutter · React · NestJs · AWS",
+    "image": "/images/works/not_know.png",
+    "order": 4
+  },
+  {
+    "title": "Lider y Arquitecto de Software",
+    "company": "buenaPeople · Full-time",
+    "time": "Nov 2019 - Feb 2020 · 4 mos",
+    "description": "Mis responsabilidades comprendian el mantenimiento y actualización de la aplicación movil liderando un equipo de 5 desarrolladores de software",
+    "skills": "API Development · Git · Agile Methodologies · Scrum · Team Leadership · Jira · React Native · Express.js",
+    "image": "/images/works/buena_people.jpg",
+    "order": 5
+  },
+  {
+    "title": "Full-stack Developer",
+    "company": "buenaPeople · Full-time",
+    "time": "Feb 2019 - Nov 2019 · 10 mos",
+    "description": "Colabore en un equipo de 4 personas para el desarrollo de la plataforma web buenapeople.com tanto el frontend como el backend. Lidere el desarrollo de la aplicación movil en react native para IOS y Android",
+    "skills": "API Development · Git · React Native · React.js · Vue.js · Express.js",
+    "image": "/images/works/buena_people.jpg",
+    "order": 6
+  },
+  {
+    "title": "Lider de DesarolloLider de Desarollo ",
+    "company": "CreativeNerd Agency · Full-time",
+    "time": "Sep 2018 - Jul 2019 · 11 mos",
+    "description": "Lider tecnico de un equipo de 3 desarolladores, Mi trabajo en este proyecto principalmente era la gestion y organización de metas y tareas el cual trabaje principalmente en Metodologia scrum",
+    "skills": "API Development · Git · React Native · React.js · Vue.js · Express.js",
+    "image": "/images/works/creative_nerd.jpg",
+    "order": 7
+  },
+  {
+    "title": "Full-stack Developer Junior",
+    "company": "Risender · Part-time",
+    "time": "Jun 2017 - Jan 2018 · 8 mos",
+    "description": "Me encarge de realizar el FrontEnd de la web en React.js integrando API REST y fui en el encargado de realizar el modulo de Autenticación en php",
+    "skills": "Git · PHP · MySQL · React.js",
+    "image": "/images/works/risender.jpg",
+    "order": 8
+  },
+  {
+    "title": "Frontend Web Developer",
+    "company": "std.io · Full-time",
+    "time": "Mar 2015 - Sep 2015 · 7 mos",
+    "description": "Desarrollo de paginas web con fines de marketing desarolladas a la medida con analiticas detalladas",
+    "skills": "Git · HTML · Google Analytics · React.js · JavaScript",
+    "image": "/images/works/not_know.png",
+    "order": 9
+  }
+]
