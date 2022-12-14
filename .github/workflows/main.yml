@@ -12,12 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: test
-        run: echo "hola {{ secrets.VERCEL_ORG_ID }}" 
+        run: echo  "$VERCEL_ORG_ID ${{ secrets.VERCEL_ORG_ID }}"
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
       - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel pull --yes --environment=production --token=IKvAcDu1lZbWA6HqFCPg1Dvp
       - name: Build Project Artifacts
-        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel build --prod --token=IKvAcDu1lZbWA6HqFCPg1Dvp
       - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy --prebuilt --prod --token=IKvAcDu1lZbWA6HqFCPg1Dvp
