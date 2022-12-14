@@ -6,6 +6,9 @@ export default function SearchingLoad() {
     loop: true,
     autoplay: true,
     animationData: animationData,
+    rendererSettings: {
+			preserveAspectRatio: 'xMidYMid slice',
+		},
   };
   return (
     <div className='max-h-64 max-w-xl'>
