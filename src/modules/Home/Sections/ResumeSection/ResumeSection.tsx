@@ -1,15 +1,15 @@
 export default function ResumeSection() {
   return (
-    <div className='container my-24 mx-auto px-6'>
-      <section className='background-radial-gradient mb-32 text-gray-800'>
+    <div className='container mx-auto px-6 lg:my-24'>
+      <section className='background-radial-gradient text-white lg:mb-32'>
         <div className='px-6 py-12 text-center md:px-12 lg:text-left'>
           <div className='container mx-auto'>
             <div className='grid items-center gap-12 lg:grid-cols-2'>
               <div className='mt-12 lg:mt-0'>
-                <h1 className='mb-12  font-mono text-5xl tracking-tight text-gray-900 md:text-6xl xl:text-7xl'>
+                <h1 className='mb-12  font-mono text-5xl tracking-tight text-white md:text-6xl xl:text-7xl'>
                   Enseñando aprendemos
                 </h1>
-                <p className='font-primary text-lg text-gray-900'>
+                <p className='font-primary text-lg text-white '>
                   Aprender y enseñar siempre me ha apasionado por lo que inicie
                   este proyecto en el cual comparto mis conocimientos y
                   experiencias como Fullstack Developer. Me alegra mucho que

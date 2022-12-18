@@ -40,7 +40,7 @@ export default function MainLayout({
         }
       </Head>
       <Nav />
-      <div>{children}</div>
+      <div className='bg-gray-800'>{children}</div>
     </main>
   );
 }

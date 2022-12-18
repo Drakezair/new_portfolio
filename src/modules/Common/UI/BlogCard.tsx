@@ -15,7 +15,7 @@ export default function BlogCard({
   description,
 }: BlogCardProps) {
   return (
-    <div className='mb-12 text-center lg:mb-0'>
+    <div className='mb-3 text-center lg:mb-0'>
       <div
         className='relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg'
         style={{ backgroundPosition: '50%' }}
@@ -37,7 +37,7 @@ export default function BlogCard({
         </Link>
       </div>
 
-      <h5 className='mb-3 text-lg font-bold'>{title}</h5>
+      <h5 className='mb-3 font-mono text-lg font-bold text-white'>{title}</h5>
       <p className='mb-6 font-primary text-gray-500'>{description}</p>
     </div>
   );

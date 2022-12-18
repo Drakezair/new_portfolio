@@ -21,7 +21,7 @@ export default function TimelineItem({
   return (
     <li>
       <div className='flex-start '>
-        <div className='-ml-3 flex h-6 w-6 items-center justify-center rounded-full bg-yellow-300'>
+        <div className='-ml-3 flex h-6 w-6 items-center justify-center rounded-full bg-yellow-300 shadow-inner'>
           <svg
             aria-hidden='true'
             focusable='false'
@@ -37,7 +37,7 @@ export default function TimelineItem({
             ></path>
           </svg>
         </div>
-        <div className='ml-6 mb-10 block max-w-md rounded-lg bg-gray-800 p-6 shadow-lg'>
+        <div className='ml-6 mb-10 block max-w-md rounded-lg bg-gray-700 p-6 shadow-lg'>
           <div className='mb-1 flex justify-between'>
             <p className='font-mono text-lg font-medium text-yellow-300 transition duration-300 ease-in-out '>
               {title}

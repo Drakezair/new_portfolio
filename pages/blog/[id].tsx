@@ -94,7 +94,7 @@ export default function BlogDetail({
       <NotionRenderer
         recordMap={recordMap}
         fullPage={true}
-        darkMode={false}
+        darkMode={true}
         disableHeader
         components={{
           nextImage: Image,

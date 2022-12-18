@@ -54,7 +54,7 @@ export default function FiltersBlogLayout() {
 
   return (
     <form>
-      <div className='flex flex-col gap-3 max-lg:h-28 max-lg:bg-white max-lg:p-5 max-lg:shadow-sm lg:grid lg:divide-y'>
+      <div className='flex flex-col gap-3 max-lg:h-28 max-lg:bg-gray-700 max-lg:p-5 lg:grid lg:divide-y'>
         <div>
           <SearchInput
             inputProps={{ ...register('Name') }}
@@ -62,7 +62,7 @@ export default function FiltersBlogLayout() {
           />
         </div>
         <div className='h-80'>
-          <p className='my-2 font-mono text-xl font-extralight max-lg:hidden'>
+          <p className='my-2 font-mono text-xl font-extralight text-white max-lg:hidden'>
             Etiquetas
           </p>
           <div className='max-lg:flex max-lg:w-full max-lg:flex-row max-lg:overflow-x-scroll  max-lg:scrollbar-hide '>

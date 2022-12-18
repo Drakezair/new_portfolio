@@ -9,10 +9,8 @@ export default function BlogListSection() {
           <div className='max-lg:p-7 lg:col-span-10'>
             <GridBlogLayout />
           </div>
-          <div className='max-lg:order-first max-lg:col-start-auto lg:col-span-2'>
-            <div className='sticky top-28 left-0'>
-              <FiltersBlogLayout />
-            </div>
+          <div className='top-16 left-0 z-50 max-lg:sticky max-lg:order-first max-lg:col-start-auto max-lg:shadow-inner lg:col-span-2'>
+            <FiltersBlogLayout />
           </div>
         </div>
       </section>

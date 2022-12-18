@@ -8,8 +8,8 @@ export default function BlogSection() {
   const { newBlogs } = useSnapshot(home_state);
 
   return (
-    <div className='container my-24 mx-auto px-6'>
-      <section className='mb-32 text-center text-gray-800 '>
+    <div className='container mx-auto mb-14 px-6'>
+      <section className=' text-center text-white '>
         <h2 className='mb-12 text-center font-mono text-3xl font-bold'>
           Cursos, tutoriales y mucho más..
         </h2>
@@ -19,7 +19,7 @@ export default function BlogSection() {
             <BlogCard key={i} {...item} />
           ))}
         </div>
-        <Button className='mt-12'>
+        <Button className='mt-2' variant='light'>
           <Link href='/blog'>Ver más</Link>
         </Button>
       </section>

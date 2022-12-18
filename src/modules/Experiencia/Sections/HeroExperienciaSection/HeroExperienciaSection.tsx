@@ -1,7 +1,7 @@
 export default function HeroExperienciaSection() {
   return (
-    <div>
-      <section className='mb-40'>
+    <div className='bg-gray-900'>
+      <section className=''>
         <div
           className=' relative overflow-hidden bg-cover bg-no-repeat max-lg:bg-bottom lg:bg-center'
           style={{

@@ -37,10 +37,10 @@ const CheckboxInput = forwardRef(
           ref={ref}
           type='checkbox'
           {...rest}
-          className={`form-check-input float-left mt-1 mr-2 h-4 w-4 cursor-pointer appearance-none  rounded-full border border-gray-300 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 checked:border-2 checked:border-gray-800 checked:bg-gray-800 focus:outline-none ${rest.className}`}
+          className={`form-check-input float-left mt-1 mr-2 h-4 w-4 cursor-pointer appearance-none  rounded-full border border-gray-300 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 checked:border-2 checked:border-yellow-300 checked:bg-yellow-300 focus:outline-none ${rest.className}`}
         />
         <label
-          className={`form-check-label inline-block font-primary capitalize text-gray-800 ${labelProps?.className}`}
+          className={`form-check-label inline-block font-primary capitalize text-white ${labelProps?.className}`}
           {...labelProps}
           htmlFor={rest.id}
         >

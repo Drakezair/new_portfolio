@@ -1,6 +1,6 @@
 import Lottie from 'lottie-react';
 
-import animationData from '@/modules/Common/libs/lottie/not_results.json';
+import animationData from '@/modules/Common/libs/lottie/not_results_dark.json';
 
 export default function FailSearchSection() {
   return (

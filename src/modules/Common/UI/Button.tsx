@@ -2,10 +2,7 @@ import * as React from 'react';
 
 enum ButtonVariant {
   'primary',
-  'outline',
-  'ghost',
   'light',
-  'dark',
 }
 
 type ButtonProps = {
@@ -16,13 +13,8 @@ type ButtonProps = {
 const classesVariant = {
   primary:
     'rounded-full bg-gray-800 px-5 py-2 font-primary text-white hover:bg-gray-700',
-  outline:
-    'rounded-full bg-gray-800 px-5 py-2 font-primary text-white hover:bg-gray-700',
-  ghost:
-    'rounded-full bg-gray-800 px-5 py-2 font-primary text-white hover:bg-gray-700',
   light:
-    'rounded-full bg-gray-800 px-5 py-2 font-primary text-white hover:bg-gray-700',
-  dark: 'rounded-full bg-gray-800 px-5 py-2 font-primary text-white hover:bg-gray-700',
+    'rounded-full bg-yellow-400 px-5 py-2 font-primary text-gray-800 hover:bg-yellow-500',
 };
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
