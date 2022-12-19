@@ -8,7 +8,7 @@ export default function BlogSection() {
   const { newBlogs } = useSnapshot(home_state);
 
   return (
-    <div className='container mx-auto mb-14 px-6'>
+    <div className='container mx-auto mb-14 py-14 px-6'>
       <section className=' text-center text-white '>
         <h2 className='mb-12 text-center font-mono text-3xl font-bold'>
           Cursos, tutoriales y mucho más..

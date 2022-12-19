@@ -7,6 +7,7 @@ import { BlogCardProps } from '@/modules/Common/UI/BlogCard';
 import {
   BlogSection,
   HeroSection,
+  LifeStyleSection,
   ResumeSection,
 } from '@/modules/Home/Sections';
 import { home_state } from '@/modules/Home/Stores/home_state';
@@ -49,6 +50,7 @@ export default function HomePage({ newBlogs }: { newBlogs: BlogCardProps[] }) {
     <MainLayout seo={Seo}>
       <HeroSection />
       <ResumeSection />
+      <LifeStyleSection />
       <BlogSection />
       <CTASection />
     </MainLayout>
