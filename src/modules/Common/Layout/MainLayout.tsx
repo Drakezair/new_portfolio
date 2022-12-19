@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import { usePanelbear } from '@panelbear/panelbear-nextjs';
 import Head from 'next/head';
 
 import Nav from './Nav';
@@ -19,6 +20,10 @@ export default function MainLayout({
   children,
   seo: { title, description, ogtitle, ogtype, ogurl, ogimage },
 }: MainLayoutI) {
+  usePanelbear(process.env.NEXT_PUBLIC_SITE_ID as string, {
+    debug: process.env.NODE_ENV === 'development',
+  });
+
   return (
     <main>
       <Head>
