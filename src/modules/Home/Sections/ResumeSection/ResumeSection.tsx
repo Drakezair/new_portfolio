@@ -23,7 +23,7 @@ export default function ResumeSection() {
                 >
                   <iframe
                     className='embed-responsive-item absolute top-0 right-0 bottom-0 left-0 h-full w-full'
-                    src='https://www.youtube.com/embed/z3h8OBf8QtQ?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com'
+                    src='https://www.youtube.com/embed/rhVgud3hncc?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com'
                     data-gtm-yt-inspected-2340190_699='true'
                     id='240632615'
                   ></iframe>
