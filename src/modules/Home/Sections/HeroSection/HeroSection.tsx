@@ -1,8 +1,9 @@
 import { ReactElement } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import socialMedia from '../../lib/configs/social_media.json';
+import { socialMedia } from '../../lib/configs/social_media';
 
 export default function HeroSection(): ReactElement {
   return (
@@ -21,12 +22,17 @@ export default function HeroSection(): ReactElement {
             apasiona la arquitectura de software, patrones de diseño, buenas
             practicas y enseñar.
           </p>
+
           <span className='grid grid-cols-12 py-10 max-lg:grid-cols-5'>
-            {socialMedia.map(({ icon, url }, i) => (
-              <Link href={url} key={i}>
-                <i className={`${icon} text-2xl text-white`} />
-              </Link>
-            ))}
+            {socialMedia.length > 0 &&
+              socialMedia.map(({ icon, url }, i) => (
+                <Link href={url} key={i}>
+                  <FontAwesomeIcon
+                    icon={icon}
+                    className='text-3xl text-white'
+                  />
+                </Link>
+              ))}
           </span>
         </span>
         <Image

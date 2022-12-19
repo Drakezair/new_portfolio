@@ -31,13 +31,6 @@ export default function MainLayout({
         <meta property='og:url' content={ogurl} />
         <meta property='og:image' content={ogimage} />
         <meta name='robots' content='follow' />
-        {
-          // eslint-disable-next-line @next/next/no-sync-scripts
-          <script
-            src='https://kit.fontawesome.com/4a7cf85fe4.js'
-            crossOrigin='anonymous'
-          />
-        }
       </Head>
       <Nav />
       <div className='bg-gray-800'>{children}</div>
