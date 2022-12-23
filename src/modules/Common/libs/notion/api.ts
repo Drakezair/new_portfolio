@@ -21,9 +21,13 @@ export const getFilteredPages = async (
       }
     );
     const data = await req.json();
+
     return data?.results?.map((item: DatabaseQuery) => ({
       title: item.properties.Name.title[0].plain_text,
-      image: item?.cover?.external.url,
+      image:
+        item?.cover?.type === 'file'
+          ? item?.cover?.file?.url
+          : item?.cover?.external?.url,
       id: item.id,
       description: item?.properties.Description.rich_text[0].plain_text,
     }));

@@ -13,7 +13,10 @@ export interface DatabaseQuery {
   };
   cover: {
     type: string;
-    external: {
+    external?: {
+      url: string;
+    };
+    file?: {
       url: string;
     };
   };
