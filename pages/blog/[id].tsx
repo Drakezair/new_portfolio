@@ -10,7 +10,10 @@ import { ParsedUrlQuery } from 'querystring';
 
 import MainLayout from '@/modules/Common/Layout/MainLayout';
 import { getPage } from '@/modules/Common/libs/notion/api';
-import { PageRetrieve } from '@/modules/Common/libs/notion/api.types';
+import {
+  DatabaseQuery,
+  PageRetrieve,
+} from '@/modules/Common/libs/notion/api.types';
 
 const Code = dynamic(() =>
   import('react-notion-x/build/third-party/code').then((m) => m.Code)
@@ -76,7 +79,7 @@ export default function BlogDetail({
   details,
 }: {
   recordMap: ExtendedRecordMap;
-  details: PageRetrieve;
+  details: DatabaseQuery;
 }) {
   const router = useRouter();
   const { id } = router.query;
@@ -85,7 +88,10 @@ export default function BlogDetail({
     description: details?.properties.Description.rich_text[0].plain_text,
     ogtitle: 'Inicio | Luisandrade.me',
     ogurl: `https//luisandrade.me/blog/${id}`,
-    ogimage: details?.cover.external.url,
+    ogimage:
+      details?.cover?.type === 'file'
+        ? details?.cover?.file?.url
+        : details?.cover?.external?.url,
     ogtype: 'article',
   };
 
