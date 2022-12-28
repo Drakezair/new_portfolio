@@ -84,9 +84,9 @@ export default function BlogDetail({
   const router = useRouter();
   const { id } = router.query;
   const Seo = {
-    title: `${details?.properties.Name.title[0].plain_text} | Luisandrade.me`,
+    title: `${details?.properties.Name.title[0].plain_text}`,
     description: details?.properties.Description.rich_text[0].plain_text,
-    ogtitle: 'Inicio | Luisandrade.me',
+    ogtitle: `${details?.properties.Name.title[0].plain_text}`,
     ogurl: `https//luisandrade.me/blog/${id}`,
     ogimage:
       details?.cover?.type === 'file'
