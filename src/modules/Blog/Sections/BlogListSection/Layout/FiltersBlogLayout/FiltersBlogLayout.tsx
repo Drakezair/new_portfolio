@@ -53,7 +53,7 @@ export default function FiltersBlogLayout() {
   }, [isFetching]);
 
   return (
-    <form>
+    <form className='top-24 lg:sticky'>
       <div className='flex flex-col gap-3 max-lg:h-28 max-lg:bg-gray-700 max-lg:p-5 lg:grid lg:divide-y'>
         <div>
           <SearchInput
