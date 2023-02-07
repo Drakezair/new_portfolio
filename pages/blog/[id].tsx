@@ -1,7 +1,6 @@
 import { NotionRenderer } from 'react-notion-x';
 import { GetServerSidePropsContext, PreviewData } from 'next';
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { NotionAPI } from 'notion-client';
@@ -14,6 +13,7 @@ import {
   DatabaseQuery,
   PageRetrieve,
 } from '@/modules/Common/libs/notion/api.types';
+import { Image } from '@/modules/Common/UI/Image';
 
 const Code = dynamic(() =>
   import('react-notion-x/build/third-party/code').then((m) => m.Code)
@@ -56,7 +56,7 @@ export async function getServerSideProps(
     const recordMap = await notion.getPage(id);
     const details: PageRetrieve = await getPage(id);
     if (!details?.cover) {
-      throw 'fail';
+      throw new Error('fail');
     }
     return {
       props: {

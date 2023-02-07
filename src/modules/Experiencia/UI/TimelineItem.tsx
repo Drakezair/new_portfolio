@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Image } from '@/modules/Common/UI/Image';
 
 export interface TimelineItemProps {
   title: string;

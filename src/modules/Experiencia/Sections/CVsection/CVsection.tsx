@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import { Image } from '@/modules/Common/UI/Image';
 
 import { TimelineExperiencia } from '../../UI';
 
-export default function CVsection() {
+export default function CVSection() {
   return (
     <div className='container mx-auto grid gap-28 px-4 pt-9 lg:grid-cols-12'>
       <div className='lg:col-span-5'>

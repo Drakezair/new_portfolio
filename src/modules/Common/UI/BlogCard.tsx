@@ -1,5 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
+
+import { Image } from '@/modules/Common/UI/Image';
 
 export interface BlogCardProps {
   image: string;
