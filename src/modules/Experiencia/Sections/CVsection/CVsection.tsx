@@ -1,4 +1,4 @@
-import { Image } from '@/modules/Common/UI/Image';
+import { Image } from '@/modules/Common/UI';
 
 import { TimelineExperiencia } from '../../UI';
 

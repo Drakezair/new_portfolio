@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Image } from '@/modules/Common/UI/Image';
+import { Image } from '@/modules/Common/UI';
 
 export default function Nav() {
   return (

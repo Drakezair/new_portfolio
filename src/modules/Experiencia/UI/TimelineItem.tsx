@@ -1,4 +1,4 @@
-import { Image } from '@/modules/Common/UI/Image';
+import { Image } from '@/modules/Common/UI';
 
 export interface TimelineItemProps {
   title: string;

@@ -93,6 +93,7 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
+    "jest-canvas-mock": "^2.4.0",
     "lint-staged": "^12.5.0",
     "next-router-mock": "^0.7.4",
     "next-sitemap": "^3.1.32",

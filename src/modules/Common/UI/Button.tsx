@@ -34,6 +34,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         ref={ref}
+        data-testid='Button'
         {...rest}
         disabled={disabled}
         className={`${classesVariant[variant]} ${className}`}
