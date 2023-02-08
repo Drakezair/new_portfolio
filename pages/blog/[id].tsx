@@ -13,7 +13,7 @@ import {
   DatabaseQuery,
   PageRetrieve,
 } from '@/modules/Common/libs/notion/api.types';
-import { Image } from '@/modules/Common/UI/Image';
+import { Image } from '@/modules/Common/UI';
 
 const Code = dynamic(() =>
   import('react-notion-x/build/third-party/code').then((m) => m.Code)

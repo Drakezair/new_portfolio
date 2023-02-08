@@ -1,6 +1,6 @@
 import NextImage, { ImageProps } from 'next/image';
 
-export const Image = (props: ImageProps) => (
+const Image = (props: ImageProps) => (
   <NextImage
     {...props}
     placeholder='blur'
@@ -8,3 +8,5 @@ export const Image = (props: ImageProps) => (
     unoptimized={true}
   />
 );
+
+export default Image;

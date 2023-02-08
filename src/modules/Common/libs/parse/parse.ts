@@ -26,3 +26,6 @@ export function parseFilters(filters: FieldValues, type: 'or' | 'and'): object {
     ],
   };
 }
+
+// @test
+// Path: src/modules/Common/libs/parse/parse.test.ts

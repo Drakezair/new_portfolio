@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Image } from '@/modules/Common/UI/Image';
+import { Image } from '@/modules/Common/UI';
 
 export interface BlogCardProps {
   image: string;
@@ -16,7 +16,7 @@ export default function BlogCard({
   description,
 }: BlogCardProps) {
   return (
-    <div className='mb-3 text-center lg:mb-0'>
+    <div data-testid='blog-card' className='mb-3 text-center lg:mb-0'>
       <div
         className='relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg'
         style={{ backgroundPosition: '50%' }}
@@ -26,7 +26,7 @@ export default function BlogCard({
         <Image
           src={image}
           className='h-52 w-full'
-          alt='BBBB'
+          alt={title}
           width={394}
           height={394}
         />

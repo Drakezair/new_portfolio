@@ -1,4 +1,4 @@
-import { Image } from '@/modules/Common/UI/Image';
+import { Image } from '@/modules/Common/UI';
 
 export default function SkillsSection() {
   return (

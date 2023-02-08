@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
-import { Image } from '@/modules/Common/UI/Image';
+import { Image } from '@/modules/Common/UI';
 import { socialMedia } from '@/modules/Home/lib/configs/social_media';
 
 export default function HeroSection(): ReactElement {
