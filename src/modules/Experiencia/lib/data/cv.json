@@ -1,18 +1,27 @@
 [
   {
-    "title": "Software developerSoftware developer",
+    "title": "Software developer",
+    "company": "Treinta · Full-time",
+    "time": "Dec 2022 - Present",
+    "description": "Diseñar y codificar una solución para el mercado b2b para micro y pequeñas empresas.",
+    "skills": "Next.js · GraphQL · Node.js",
+    "image": "/images/works/treinta.jpg",
+    "order": 0
+  },
+  {
+    "title": "Software developer",
     "company": "Rootstack · Full-time",
     "time": "Oct 2021 - Present · 1 yr 3 mos",
-    "description": "Develop solutions for diferent clients on diferent technologies",
+    "description": "Desarrollar soluciones para diferentes clientes en diferentes tecnologías.",
     "skills": "API Development · Git · GatsbyJS · Xamarin Products · AWS Lambda · Serverless Framework · Amazon Web Services (AWS) · React Native · React.js · AngularJS",
-    "image": "/images/works/rootstack.jpg",
+    "image": "/images/works/rootstack.jpeg",
     "order": 0
   },
   {
     "title": "Software Engineer",
     "company": "IMUKO · Full-time",
     "time": "Jun 2021 - Aug 2022 · 1 yr 3 mos",
-    "description": "I work on diverse platforms for diferents clients. Most relevant is scanib.com that is a platform complete developed by me and is a rental and sales of real states",
+    "description": "Trabajo en diversas plataformas para diferentes clientes. Lo mas relevante es scanib.com que es una plataforma completa desarrollada por mi y es una empresa de alquiler y venta de bienes raices",
     "skills": "API Development · Git · Strapi.js · Amazon Web Services (AWS) · React Native · AWS IoT · expo · React.js · Node.js",
     "image": "/images/works/imuko.jpg",
     "order": 1
