@@ -65,7 +65,9 @@ export default function TimelineItem({
           <p className='mb-4 text-xs font-extralight text-yellow-300 transition duration-300 ease-in-out '>
             {time}
           </p>
-          <p className=' mb-6 font-primary text-xs text-white'>{textWithBreak}</p>
+          <p className=' mb-6 font-primary text-xs text-white'>
+            {textWithBreak}
+          </p>
           <p className='font-primary  text-xs text-white'>
             <span className='font-bold'>Skills:</span> {skills}
           </p>
