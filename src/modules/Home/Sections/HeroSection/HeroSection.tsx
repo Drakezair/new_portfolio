@@ -2,10 +2,13 @@ import { ReactElement } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
+import useTranslation from '@/modules/Common/libs/i18n/useTranslation';
 import { Image } from '@/modules/Common/UI';
 import { socialMedia } from '@/modules/Home/lib/configs/social_media';
 
 export default function HeroSection(): ReactElement {
+  const { t } = useTranslation();
+
   return (
     <div className='bg-gray-900'>
       <div className='container mx-auto flex flex-col-reverse items-center justify-center  max-lg:py-20  md:flex-row md:justify-around lg:h-screen'>
@@ -16,12 +19,7 @@ export default function HeroSection(): ReactElement {
           <h2 className='mb-1  font-primary text-xl text-white lg:text-2xl'>
             FullStack Developer
           </h2>
-          <p className='text-1xl font-primary text-white'>
-            Desarrollador de software con más de 6 años de experienca.
-            Hablidades de liderazgo, comunicativas y manejo de requerimentos. Me
-            apasiona la arquitectura de software, patrones de diseño, buenas
-            practicas y enseñar.
-          </p>
+          <p className='text-1xl font-primary text-white'>{t('home_hero')}</p>
 
           <span className='grid grid-cols-12 py-10 max-lg:grid-cols-5'>
             {socialMedia.length > 0 &&

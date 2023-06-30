@@ -1,4 +1,7 @@
+import useTranslation from '@/modules/Common/libs/i18n/useTranslation';
+
 export default function ResumeSection() {
+  const { t } = useTranslation();
   return (
     <div className='container mx-auto px-6 lg:my-24'>
       <section className='background-radial-gradient text-white lg:mb-32'>
@@ -6,14 +9,11 @@ export default function ResumeSection() {
           <div className='container mx-auto'>
             <div className='grid items-center gap-12 lg:grid-cols-2'>
               <div className='mt-12 lg:mt-0'>
-                <h1 className='mb-12  font-mono text-5xl tracking-tight text-white md:text-6xl xl:text-7xl'>
-                  Enseñando aprendemos
+                <h1 className='mb-12  font-mono text-2xl tracking-tight text-white md:text-3xl xl:text-7xl'>
+                  {t('home_resume_title')}
                 </h1>
                 <p className='font-primary text-lg text-white '>
-                  Aprender y enseñar siempre me ha apasionado por lo que inicie
-                  este proyecto en el cual comparto mis conocimientos y
-                  experiencias como Fullstack Developer. Me alegra mucho que
-                  estes aqui.
+                  {t('home_resume_description')}
                 </p>
               </div>
               <div className='mb-12 lg:mb-0'>

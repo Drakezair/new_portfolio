@@ -2,9 +2,11 @@ import { useForm } from 'react-hook-form';
 import { ErrorMessage } from '@hookform/error-message';
 import { useMutation } from '@tanstack/react-query';
 
+import useTranslation from '../../libs/i18n/useTranslation';
 import { suscribeToNewsletter } from '../../libs/mailchimp/mailchimp';
 
 export default function CTASection() {
+  const { t } = useTranslation();
   const {
     handleSubmit,
     register,
@@ -24,11 +26,11 @@ export default function CTASection() {
             <div className='w-full shrink-0 grow-0 basis-auto px-3 lg:w-10/12'>
               <div className='grid items-center gap-x-6 lg:grid-cols-2'>
                 <div className='mb-10 lg:mb-0'>
-                  <h2 className='font-mono text-3xl font-bold text-white'>
-                    Únete y ponte al día en
+                  <h2 className='font-mono text-lg font-bold text-white'>
+                    {t('cta_title')}
                     <br />
                     <span className='font-primary text-yellow-300'>
-                      Desarrollo de software
+                      {t('cta_title_bold')}
                     </span>
                   </h2>
                 </div>
@@ -43,7 +45,7 @@ export default function CTASection() {
                       <input
                         type='email'
                         className='form-control m-0 mb-2 block w-full rounded border border-solid border-gray-300 bg-white bg-clip-padding px-4 py-2 text-xl font-normal text-gray-700 transition ease-in-out focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none md:mb-0 md:mr-2'
-                        placeholder='Correo electrónico'
+                        placeholder={t('common_mail')}
                         {...register('email', {
                           required: {
                             message: 'Campo requerido',
@@ -62,7 +64,7 @@ export default function CTASection() {
                         data-mdb-ripple='true'
                         data-mdb-ripple-color='light'
                       >
-                        Subscribirme
+                        {t('common_subscribe')}
                       </button>
                     </div>
                     <ErrorMessage
