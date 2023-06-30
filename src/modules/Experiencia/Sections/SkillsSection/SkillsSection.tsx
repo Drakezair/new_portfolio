@@ -1,6 +1,8 @@
+import useTranslation from '@/modules/Common/libs/i18n/useTranslation';
 import { Image } from '@/modules/Common/UI';
 
 export default function SkillsSection() {
+  const { t } = useTranslation();
   return (
     <div className='bg-gray-900 py-16 px-6'>
       <div className='container mx-auto'>
@@ -18,12 +20,10 @@ export default function SkillsSection() {
                     }}
                   >
                     <h2 className='mb-6 text-3xl font-bold'>
-                      Habilidades y Tecnologías
+                      {t('experience_skills_title')}
                     </h2>
-                    <p className='mb-6 text-gray-500'>
-                      Desarrollador Fullstack con mas de 5 años de experienca.
-                      Hablidades de liderazgo, comunicativas y manejo de
-                      requerimentos.
+                    <p className='mb-6 text-gray-800'>
+                      {t('experience_skills_desription')}
                     </p>
 
                     <div className='grid gap-x-6 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3'>

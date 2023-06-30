@@ -5,7 +5,7 @@ export default function BlogListSection() {
   return (
     <div>
       <section>
-        <div className='grid gap-5 max-lg:grid-cols-1 lg:grid-cols-12 lg:p-7'>
+        <div className='grid gap-5 max-lg:grid-cols-1 lg:min-h-screen lg:grid-cols-12 lg:p-7'>
           <div className='max-lg:p-7 lg:col-span-10'>
             <GridBlogLayout />
           </div>

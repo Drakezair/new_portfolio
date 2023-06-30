@@ -1,4 +1,7 @@
+import useTranslation from '@/modules/Common/libs/i18n/useTranslation';
+
 export default function HeroExperienciaSection() {
+  const { t } = useTranslation();
   return (
     <div className='bg-gray-900'>
       <section className=''>
@@ -20,10 +23,9 @@ export default function HeroExperienciaSection() {
               }}
             >
               <h1 className='text-5xl font-bold  md:text-6xl xl:text-7xl'>
-                Luis Andrade <br />
-                <small className='text-lg'>
-                  FullStack Javascript | DevOps | Apps | Tech lead
-                </small>
+                Luis Eduardo Andrade Flores
+                <br />
+                <small className='text-lg'>{t('experience_hero')} </small>
               </h1>
             </div>
           </div>

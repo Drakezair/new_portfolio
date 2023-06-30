@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import { BlogListSection, HeroBlogSection } from '@/modules/Blog/Sections';
+import { BlogListSection } from '@/modules/Blog/Sections';
 import MainLayout from '@/modules/Common/Layout/MainLayout';
 import { getPropertiesDatabase } from '@/modules/Common/libs/notion/api';
 import { TagDatabaseNotion } from '@/modules/Common/libs/notion/api.types';
@@ -28,7 +28,6 @@ export default function BlogPage({ tags }: { tags: TagDatabaseNotion }) {
   }, [tags]);
   return (
     <MainLayout seo={Seo}>
-      <HeroBlogSection />
       <BlogListSection />
     </MainLayout>
   );

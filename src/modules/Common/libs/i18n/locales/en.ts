@@ -1,5 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export const en: any = {
+  nav_home: 'Home',
+  nav_experience: 'Experience',
+  nav_blog: 'Blog',
   home_hero:
     'Experienced Fullstack developer engineer with 6 years of expertise in creating impactful products. Passionate about leveraging technology to make a meaningful impact on end-users.',
   home_resume_title: 'Unlocking Knowledge through Teaching',
@@ -13,4 +16,8 @@ export const en: any = {
   cta_title_bold: 'Your Software Development Skills Today!',
   common_mail: 'Email',
   common_subscribe: 'subscribe',
+  experience_hero: 'Senior Fullstack Developer',
+  experience_skills_title: 'My Proficiency in Skills and Technologies',
+  experience_skills_desription:
+    'Fullstack Developer with over 6 years of experience. Leadership, communication, and requirements management skills.',
 };

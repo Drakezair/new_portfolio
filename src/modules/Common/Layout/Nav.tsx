@@ -2,7 +2,10 @@ import Link from 'next/link';
 
 import { Image } from '@/modules/Common/UI';
 
+import useTranslation from '../libs/i18n/useTranslation';
+
 export default function Nav() {
+  const { t } = useTranslation();
   return (
     <nav className='sticky top-0 z-50 flex w-screen items-center justify-between bg-gray-900 p-4 drop-shadow-lg'>
       <Link href='/'>
@@ -22,13 +25,13 @@ export default function Nav() {
       <div>
         <ul className='grid grid-cols-3 max-lg:gap-0 lg:gap-0'>
           <li className='text-center text-yellow-300 hover:underline'>
-            <Link href='/'>Inicio</Link>
+            <Link href='/'>{t('nav_home')}</Link>
           </li>
           <li className='text-center text-yellow-300 hover:underline'>
-            <Link href='/experiencia'>Experiencia</Link>
+            <Link href='/experiencia'>{t('nav_experience')}</Link>
           </li>
           <li className='text-center text-yellow-300 hover:underline'>
-            <Link href='/blog'>Blog</Link>
+            <Link href='/blog'>{t('nav_blog')}</Link>
           </li>
         </ul>
       </div>

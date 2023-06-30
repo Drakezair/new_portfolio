@@ -1,5 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const es: any = {
+  nav_home: 'Inicio',
+  nav_experience: 'Experiencia',
+  nav_blog: 'Blog',
   home_hero:
     'Desarrollador de fullstack con experiencia y conocimientos en la creación de productos impactantes durante 6 años. Apasionado por aprovechar la tecnología para tener un impacto significativo en los usuarios finales.',
   home_resume_title: 'Unlocking Knowledge through Teaching',
@@ -14,4 +17,8 @@ export const es: any = {
     '¡Potencia tus habilidades en Desarrollo de Software hoy mismo!',
   common_mail: 'Correo electrónico',
   common_subscribe: 'Suscribir',
+  experience_hero: 'Desarrollador Fullstack Senior',
+  experience_skills_title: 'Mis Habilidades y Tecnologías',
+  experience_skills_desription:
+    'Desarrollador Fullstack con más de 6 años de experiencia. Habilidades de liderazgo, comunicación y gestión de requerimientos.',
 };
